@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-wrapper">
+                <a href="#">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/607/409/264/yasuo-league-of-legends-yasuo-wallpaper-preview.jpg"
+                        alt="logo">
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="sanpham.html">DANH SÁCH SẢN PHẨM</a></li>
+                <li><a href="lienhe.html">Liên hệ với chúng tôi</a></li>
+
+            </ul>
+        </header>
+        <main>
+            <div class="container">
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+            </div>
+            <script>
+                let arrayData = JSON.parse(localStorage.getItem('array'));
+                // console.log(arrayData.length)
+                for (let i = 0; i < arrayData.length; i++) {
+                    document.querySelectorAll('.content')[i].innerHTML = `<div class="products-item">
+                                <span class="status-sale">Sale off</span>
+                                <div class="products-img">
+                                    <a href="chitietsp.html">
+                                        <img src="${arrayData[i].image}" alt="day la anh">
+                                    </a>
+                                </div>
+                                <h4 class="products-item-name">
+                                    <a href="chitietsp.html">${arrayData[i].name}</a>
+                                </h4>
+                                <div class="products-price">
+                                    <span class="new-price">${arrayData[i].price}
+                                    </span>
+                                </div>
+                            </div>`
+                }
+                let imgSelect = document.querySelectorAll('.products-img')
+                for (let i = 0; i < arrayData.length; i++) {
+                    imgSelect[i].addEventListener('click', function () {
+                        localStorage.setItem('id', arrayData[i].id)
+                    })
+                }
+                for (let i = 0; i < arrayData.length; i++) {
+                    imgSelect[i].nextElementSibling.addEventListener('click', function () {
+                        localStorage.setItem('id', arrayData[i].id)
+                    })
+                }
+            </script>
+        </main>
+        <footer>
+            <div class="about">
+                <span>
+                    Đoàn Hồng Quang
+                </span>
+
+            </div>
+        </footer>
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>

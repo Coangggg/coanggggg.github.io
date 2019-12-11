@@ -1,0 +1,187 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 980px;
+    margin:auto;
+}
+header{
+    text-align: center;
+}
+main{
+    margin-bottom: 10px;
+}
+.logo-wrapper{
+    background-color:lightskyblue;
+    padding:35px 45px 35px 0;
+    /* text-align: center; */
+}
+.menu{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    border-bottom:1px solid #000;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    font-family: tahoma;
+}
+.menu li a{
+    text-decoration: none;
+    color:white;
+    display:block;
+    background:lightseagreen;
+}
+.menu li a:hover{
+background-color: grey;
+color:#e3cde2;
+
+}
+h2 a{
+    text-decoration: none;
+    color: lightcoral;
+}
+h2{
+    text-align: center;
+    border-bottom:1px solid blue;
+    padding-top:27px;
+    padding-bottom:27px;
+    font-size: 24px;
+    font-family: tahoma;
+    color:#b85797;
+    margin-bottom:17px;
+    font-weight: normal;
+    text-transform:uppercase;
+}
+.products{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:30px;
+    position: relative;
+}
+.products-item{
+    border:2px solid lightblue;
+    text-align: center;
+    padding:10px 15px 30px 15px;
+    position: relative;
+    margin: 10px 0 10px 0;
+}
+.btn{
+    background-color: #1a73e8;
+    color:#fff;
+}
+h4 a{
+    text-decoration: none;
+    color:lightcoral;
+    font-family: tahoma;
+    font-size:19px;
+    font-weight: normal;
+}
+h4{
+    margin:33px 0;
+    color: lightcoral;
+}
+.products-price span{
+    display:block;
+}
+
+
+.old-price{
+    text-decoration: line-through;
+    color:#010101;
+    font-size:15px;
+    font-family: tahoma;
+    margin-bottom:33px;
+}
+.new-price{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom:25px;
+    color:red;
+    font-family: tahoma;
+}
+.btn-primary{
+    font-size:18px;
+    font-family:tahoma;
+    padding: 14px 37px;
+}
+footer{
+    background:lightskyblue;
+    text-align: center;
+}
+.about{
+    color:white;
+    font-size:14px;
+    font-family: tahoma;
+    padding:20px 0;
+}
+.status-sale{
+    position: absolute;
+    right:10px;
+    top:5px;
+    color: white;
+    background: red;
+}
+.test-position{
+    position: absolute;
+    left:0;
+    top:0;
+}
+.products-img img{
+    width: 100px;
+    height: 100px;
+
+}
+.hide{
+    display: none;
+}
+.category{
+    margin-bottom: 10px;
+}
+.main-content{
+    text-align: center;
+}   
+.content{
+    margin: 10px 0 10px 0;
+}
+.contact{
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+h3{
+    color:lightcoral;
+    font-size:32px;
+    font-family: 'Times New Roman';
+    margin-bottom:30px;
+    text-align: center;
+}
+::placeholder{
+    font-size:11px;
+    font-family:tahoma;
+}
+.btn-secondary{
+    padding:10px 50px;
+    font-size:11px;
+    font-family:tahoma;
+    margin: 10px;
+} 
+.input-mail{
+    padding:10px 0px 10px 20px;
+    margin-bottom:15px;
+    width: 300px;
+    text-align: left;
+}
+.info{
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 200px 0 200px;
+}
+.id{
+    color:blue;
+}
+.desc{
+    color:gray;
+}
